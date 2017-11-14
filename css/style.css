@@ -1,0 +1,88 @@
+body {
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  overflow: hidden;
+  font: "微软雅黑", 12px/1.5em;
+  color: #fff;
+}
+
+a{
+  color: rgba(255, 255, 255, 0.8);
+}
+a:hover{
+  color: #fff;
+}
+/*背景*/
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+#con{
+  width: 75%;
+  margin: 100px auto;
+  text-align: center;
+}
+#con p.title{
+  font-size: 28px;
+  animation: title ease-in 2s 1;
+  transition: all 2s;
+}
+@keyframes title {
+  0%{opacity: 0;color: rgb(53, 221, 232);}
+}
+#con p.list{
+  margin-top: 3em;
+  animation: title ease-in 1s 1;
+}
+#con p.tips{
+  margin-top: 15px;
+  cursor: pointer;
+  animation: title ease-in 2s 1;
+}
+#con p.tips:after{
+  content: "<<";
+}
+#con p.tips::before{
+  content: ">>";
+}
+#con a{
+  display: inline-block;
+  padding: 0 50px;
+  height: 35px;
+  line-height: 35px;
+  margin: 10px;
+  background: rgba(255,255,255,.1);
+  color: #e2dddd;
+  border:1px solid rgba(255,255,255,.3);
+  border-radius: 15px;
+}
+#con a:Hover{
+  color: #fff;
+  border:1px solid rgba(255,255,255,.3);
+  background: rgba(255,255,255,.3);
+  transition: all .5s;
+}
+#by{
+  position: fixed;
+  bottom: 4px;
+  width: 100%;
+  text-align: center;
+}
+#fork{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+#fork img{
+  width: 100px;
+  height: 100px;
+  opacity: .8;
+   filter: blur(5px);
+  cursor: pointer;
+  transition: all .3s ease-in;
+}
+#fork img:hover{
+  filter: blur(0);
+  opacity: 1;
+}
